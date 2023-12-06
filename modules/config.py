@@ -52,7 +52,7 @@ def try_load_deprecated_user_path_config():
         replace_config('inpaint_models_path', 'path_inpaint')
         replace_config('controlnet_models_path', 'path_controlnet')
         replace_config('clip_vision_models_path', 'path_clip_vision')
-        replace_config('pasz_expansion_path', 'path_pasz_expansion')
+        replace_config('fooocus_expansion_path', 'path_fooocus_expansion')
         replace_config('temp_outputs_path', 'path_outputs')
 
         if deprecated_config_dict.get("default_model", None) == 'juggernautXL_version6Rundiffusion.safetensors':
@@ -117,7 +117,7 @@ def get_dir_or_set_default(key, default_value):
 
 
 path_checkpoints = get_dir_or_set_default('path_checkpoints', '../models/checkpoints/')
-path_loras = get_dir_or_set_default('path_loras', '../content/drive/MyDrive/foocos lora/loras')
+path_loras = get_dir_or_set_default('path_loras', '../models/loras/')
 path_embeddings = get_dir_or_set_default('path_embeddings', '../models/embeddings/')
 path_vae_approx = get_dir_or_set_default('path_vae_approx', '../models/vae_approx/')
 path_upscale_models = get_dir_or_set_default('path_upscale_models', '../models/upscale_models/')
